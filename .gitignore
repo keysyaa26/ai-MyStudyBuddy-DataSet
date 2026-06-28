@@ -1,0 +1,110 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# ======================
+# Environment Variables
+# ======================
+.env
+.env.*
+
+<<<<<<< HEAD
+data/
+
+=======
+>>>>>>> 31bcc8a8376f91270cefcd29697bded76bbf5973
+# ======================
+# Jupyter
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# VS Code
+# ======================
+.vscode/
+
+# ======================
+# Pytest
+# ======================
+.pytest_cache/
+
+# ======================
+# Logs
+# ======================
+logs/
+*.log
+
+# ======================
+# OS Files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# MLflow
+# ======================
+mlruns/
+
+# ======================
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Model Artifacts (AI Models)
+# ======================
+artifacts/
+checkpoints/
+models/onnx_production/
+*.onnx
+=======
+=======
+>>>>>>> 31bcc8a8376f91270cefcd29697bded76bbf5973
+# Model Artifacts
+# ======================
+artifacts/
+checkpoints/
+<<<<<<< HEAD
+>>>>>>> 31bcc8a8376f91270cefcd29697bded76bbf5973
+=======
+>>>>>>> 31bcc8a8376f91270cefcd29697bded76bbf5973
+
+# ======================
+# Firebase Credentials
+# ======================
+firebase-key.json
+serviceAccountKey.json
+
+# ======================
+# Build Files
+# ======================
+dist/
+build/
+
+# ======================
+# Docker
+# ======================
+.docker/
+
+# ======================
+# Temporary
+# ======================
+tmp/
+<<<<<<< HEAD
+<<<<<<< HEAD
+temp/
+=======
+temp/
+
+*.onnx
+>>>>>>> 31bcc8a8376f91270cefcd29697bded76bbf5973
+=======
+temp/
+
+*.onnx
+>>>>>>> 31bcc8a8376f91270cefcd29697bded76bbf5973

@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+transformers
+optimum
+torch
+numpy
+optimum[onnxruntime]
+onnxruntime
+pandas
+scikit-learn
+tensorflow
+tensorflow-hub
+nltk
+matplotlib
+tqdm
+rouge-score
