@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- {% load static %} -->
+
+    <title>My Study Buddy</title>
+
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+     <link rel="stylesheet" href="../static/css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h2>Peringkas Dokumen</h2>
+
+        <p>
+            Upload dokumen dalam bentuk PDF
+        </p>
+
+    </section>
+
+
+    <!-- Main -->
+
+    <section class="content">
+
+
+        <!-- LEFT -->
+
+        <div class="card">
+
+            <h3>Upload Dokumen</h3>
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <!-- {% csrf_token %} -->
+
+                <label class="upload-box">
+
+                    <input type="file" name="document" accept=".pdf">
+
+                    <span>
+                        Upload dokumen ke sini
+                    </span>
+
+                </label>
+
+
+                <div class="slider-section">
+
+                    <label>Compression Ratio</label>
+
+                    <input
+                            type="range"
+                            min="0.10"
+                            max="0.50"
+                            step="0.01"
+                            value="0.27"
+                            name="ratio"
+                            id="ratioSlider">
+
+                    <div class="ratio-value">
+                        <span>0.10</span>
+
+                        <span id="ratioText">0.27</span>
+
+                        <span>0.50</span>
+                    </div>
+
+                </div>
+
+
+                <button type="submit">
+
+                    Ringkas
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+
+        <!-- RIGHT -->
+
+        <div class="card">
+
+            <div class="result-header">
+
+                <h3>Hasil Ringkasan</h3>
+
+            </div>
+
+
+            <textarea readonly placeholder="Ringkasan akan muncul di sini..."> pt kyoraku blowmolding indonesia adalah perusahaan manufaktur yang bergerak dalam memproduksi komponen otomotif berbahan plastik dengan teknologi blowmolding dan injection molding. permasahalan yang terjadi adalah kurangnya barang yang dikirim ke customer dan ketidaksesuaian barang yang dikirim dengan dokumen surat jalan pada proses pengiriman (delivery). sistem ini merekap dan menggambarkan semua proses dari tahap awal penerimaan po sampai pengecekan barang saat loading atau barang masuk k e dalam truk, agar customer dan pengawas sendiri dapat melihat progress dari barang yang dipesan dari awal hingga akhir. dalam pengembangan sistem ini, metode agile digunakan karena sifatnya yang fleksibel dan iterative. metode ini mendukung proses pembangunan sistem dengan siklus pendek dan mudah diimplementasikan ke dalam lingkungan operasional perusahaan den gan cepat sehingga dapat menjawab kebutuhan mendesak dalam proses delivery.
+            </textarea>
+        </div>
+
+    </section>
+
+
+</div>
+
+<script>
+
+const slider=document.getElementById("ratioSlider");
+const output=document.getElementById("ratioText");
+
+slider.oninput=function(){
+    output.innerHTML=this.value;
+}
+
+</script>
+
+</body>
+</html>
